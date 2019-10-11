@@ -3,10 +3,190 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <header>
+      <nav>
+        <a href="#">
+          <img src="img/svg/nerds-logo.svg" alt="Логотип студии Нёрдс" width="160" height="65">
+        </a>
+        <ul>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <a href="#">Корзина</a>
+      </nav>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+      <section>
+        <h1 class="visually-hidden">Cтудии Нёрдс - делаем отлично от других!</h1>
+        <div>
+          <button>Слайд 1</button>
+          <button>Слайд 2</button>
+          <button>Слайд 3</button>
+        </div>
 
+        <ul>
+          <li>
+            <h3>Долго, дорого, скрупулезно.</h3>
+            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <a href="#">Узнать больше</a>
+          </li>
+          <li>
+            <h3>Любим математику как никто другой</h3>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a href="#">Узнать больше</a>
+          </li>
+          <li>
+            <h3>Только ночь, только хардкор</h3>
+            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a href="#">Узнать больше</a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- <section class="slider">
+          <div class="container">
+            <h2 class="visually-hidden">Преимущества</h2>
+            <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+            <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+            <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+            <div class="slider-controls">
+              <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+              <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+              <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+            </div>
+            <ul class="slider-list">
+              <li class="slider-item">
+                <h3>Долго, дорого,<br> скрупулезно.</h3>
+                <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                <a class="slider-item-button button" href="#">Узнать больше</a>
+              </li>
+              <li class="slider-item">
+                <h3>Любим математику как никто другой</h3>
+                <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                <a class="slider-item-button button" href="#">Узнать больше</a>
+              </li>
+              <li class="slider-item">
+                <h3>Только ночь,<br> только хардкор</h3>
+                <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+                <a class="slider-item-button button" href="#">Узнать больше</a>
+              </li>
+            </ul>
+          </div>
+        </section> -->
+    </header>
+
+    <main>
+      <section>
+        <h2 class="visually-hidden">Что мы делаем</h2>
+        <ul>
+          <li>
+            <h3>Веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a href="#">Заказать</a>
+          </li>
+          <li>
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a href="#">Заказать</a>
+          </li>
+          <li>
+            <h3>Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a href="#">Заказать</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <div>
+          <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h3>Выполняем заказы на разработку:</h3>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+
+        <div>
+          <img src="img/nerds-picture.png" alt="Праздничный логотип студии Нёрдс" width="360" height="208">
+
+          <table>
+            <caption>с 2004 года Любим точность во всем:</caption>
+            <tr>
+              <td>146</td>
+              <td>100</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">Наши партёры</h2>
+        <ul>
+          <li><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy</a></li>
+          <li><a href="#">borodinski</a></li>
+          <li><a href="#">pink</a></li>
+          <li><a href="#">mishka</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <h2 class="visually-hidden">Контакты студии Нёрдс</h2>
+        <img src="/img/map.png" alt="Карта - Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
+        <div>
+          <h3>Nёrds Design Studio</h3>
+          <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <a href="contact.html">Напишите нам</a>
+        </div>
+      </section>
+
+      <section>
+        <ul>
+          <li><a href="#">Вконтакте</a></li>
+          <li><a href="#">Фейсбук</a></li>
+          <li><a href="#">Инстаграмм</a></li>
+        </ul>
+
+        <div>
+          <h3>Давайте дружить, это выгодно!</h3>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </section>
+    </footer>
+
+    <form action="https://echo.htmlacademy.ru/" method="GET">
+      <fieldset>
+        <legend>Напишите нам</legend>
+        <button>Закрыть</button>
+
+        <label for="">Ваше имя:</label>
+        <input type="text">
+
+        <label for="">Ваш e-mail:</label>
+        <input type="email">
+
+        <label for="">Текст письма:</label>
+        <input type="text">
+
+        <button type="submit">Отправить</button>
+      </fieldset>
+    </form>
   </body>
 </html>
