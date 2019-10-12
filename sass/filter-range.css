@@ -14,10 +14,6 @@ body {
   padding: 0;
 
   border: none;
-
-  /* Для демонстрации */
-  width: 260px;
-  margin: 50px auto;
 }
 
 .range-filter {
