@@ -5,221 +5,219 @@
     <title>HTML Academy: Нёрдс</title>
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://rawcdn.githack.com/ArtMan-8/outline-prototype/7d7765cd572bdec952ca61280d70dd9f1781c153/css/outline-prototype-safe.css">
+    <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html">
-          <img src="img/svg/nerds-logo.svg" alt="Логотип студии Нёрдс" width="160" height="65">
+    <header class="header">
+      <nav class="header__nav nav-header">
+        <a class="nav-header__logo-link" href="#">
+          <img class="nav-header__logo" src="img/svg/nerds-logo.svg" alt="Логотип студии Нёрдс" width="160" height="65">
         </a>
 
-        <ul>
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
+        <ul class="nav-header__list">
+          <li class="nav-header__item"><a class="nav-header__link" href="#">Студия</a></li>
+          <li class="nav-header__item"><a class="nav-header__link" href="#">Клиенты</a></li>
+          <li class="nav-header__item"><a class="nav-header__link nav-header__link--current" href="catalog.html">Магазин</a></li>
+          <li class="nav-header__item"><a class="nav-header__link" href="#">Контакты</a></li>
         </ul>
 
-        <a href="#">Корзина</a>
+        <a class="nav-header__basket" href="#">Корзина</a>
       </nav>
 
-      <section>
-        <h1>Магазин готовых шаблонов</h1>
-      </section>
+      <h1 class="header__header">Магазин готовых шаблонов</h1>
     </header>
 
-    <main>
-      <section>
+    <main class="main">
+      <section class="main__filter">
         <h2 class="visually-hidden">Фильтр готовых шаблонов</h2>
-        <form action="https://echo.htmlacademy.ru/" method="GET">
-          <!-- <fieldset class="filter-item">
-              <legend>Стоимость:</legend>
-              <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
-                  </div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
+        <form class="form-filter" action="https://echo.htmlacademy.ru/" method="GET">
+          <fieldset class="form-filter__set">
+            <legend class="form-filter__legend">Стоимость:</legend>
+
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 0%; width: 70%"></div>
                 </div>
-                <div class="price-controls">
-                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
               </div>
-            </fieldset> -->
-          <fieldset>
-            <legend>Стоимость:</legend>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
+            </div>
 
           </fieldset>
 
-          <fieldset>
-            <legend>Сетка:</legend>
-            <ul>
-              <li>
-                <input type="radio" checked>
-                <label for="">Адаптивная</label>
+          <fieldset class="form-filter__set">
+            <legend class="form-filter__legend">Сетка:</legend>
+            <ul class="form-filter__list">
+              <li class="form-filter__item">
+                <input class="form-filter__input form-filter__input--radio" type="radio" checked>
+                <label class="form-filter__label" for="">Адаптивная</label>
               </li>
-              <li>
-                <input type="radio">
-                <label for="">Фиксированная</label>
+              <li class="form-filter__item">
+                <input class="form-filter__input form-filter__input--radio" type="radio">
+                <label class="form-filter__label" for="">Фиксированная</label>
               </li>
-              <li>
-                <input type="radio">
-                <label for="">Резиновая</label>
+              <li class="form-filter__item">
+                <input class="form-filter__input form-filter__input--radio" type="radio">
+                <label class="form-filter__label" for="">Резиновая</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset>
-            <legend>Особенности:</legend>
-            <ul>
-              <li>
-                <input type="checkbox" checked>
-                <label for="">Слайдер</label>
+          <fieldset class="form-filter__set">
+            <legend class="form-filter__legend">Особенности:</legend>
+            <ul class="form-filter__list">
+              <li class="form-filter__item">
+                <input class="form-filter__input form-filter__input--check" type="checkbox" checked>
+                <label class="form-filter__label" for="">Слайдер</label>
               </li>
-              <li>
-                <input type="checkbox">
-                <label for="">Блок преимуществ</label>
+              <li class="form-filter__item">
+                <input class="form-filter__input form-filter__input--check" type="checkbox">
+                <label class="form-filter__label" for="">Блок преимуществ</label>
               </li>
-              <li>
-                <input type="checkbox" checked>
-                <label for="">Новости</label>
+              <li class="form-filter__item">
+                <input class="form-filter__input form-filter__input--check" type="checkbox" checked>
+                <label class="form-filter__label" for="">Новости</label>
               </li>
-              <li>
-                <input type="checkbox">
-                <label for="">Галерея</label>
+              <li class="form-filter__item">
+                <input class="form-filter__input form-filter__input--check" type="checkbox">
+                <label class="form-filter__label" for="">Галерея</label>
               </li>
-              <li>
-                <input type="checkbox">
-                <label for="">Корзина</label>
+              <li class="form-filter__item">
+                <input class="form-filter__input form-filter__input--check" type="checkbox">
+                <label class="form-filter__label" for="">Корзина</label>
               </li>
             </ul>
           </fieldset>
 
-          <button type="submit">Показать</button>
+          <button class="form-filter__submit" type="submit">Показать</button>
         </form>
       </section>
 
-      <section>
-        <div>
+      <section class="main__sorted sorted">
+        <div class="sorted__choise">
           <h2 class="visually-hidden">Шаблоны, отсортированные по критериям</h2>
-          <p>Сортировать:</p>
 
-          <ul>
-            <li><a href="#">по цене</a></li>
-            <li><a href="#">по типу</a></li>
-            <li><a href="#">по названию</a></li>
+          <p class="sorted__header">Сортировать:</p>
+          <ul class="sorted__how">
+            <li class="sorted__item sorted__item--current"><a class="sorted__link" href="#">по цене</a></li>
+            <li class="sorted__item"><a class="sorted__link" href="#">по типу</a></li>
+            <li class="sorted__item"><a class="sorted__link" href="#">по названию</a></li>
           </ul>
 
-          <div>
-            <span>по убыванию</span>
-            <span>по возрастанию</span>
+          <div class="sorted__direction">
+            <span class="sorted__arrow sorted__arrow--down sorted__arrow--current">по убыванию</span>
+            <span class="sorted__arrow sorted__arrow--up">по возрастанию</span>
           </div>
         </div>
 
-        <ul>
-          <li>
-            <img src="img/img-sedona.jpg" alt="Скриншот шаблона Sedona" width="360" height="576">
-            <div>
-              <h3>Sedona</h3>
-              <p>Информационный сайт для туристов</p>
-              <a href="#">9 900 руб.</a>
+        <ul class="sorted__cards cards">
+          <li class="cards__item cards__item--current">
+            <img class="cards__img" src="img/img-sedona.jpg" alt="Скриншот шаблона Sedona" width="360" height="576">
+            <div class="cards__content">
+              <h3 class="cards__header">Sedona</h3>
+              <p class="cards__text">Информационный сайт для туристов</p>
+              <a class="cards__link" href="#">9 900 руб.</a>
             </div>
           </li>
-          <li>
-            <img src="img/img-pink.jpg" alt="Скриншот шаблона Pink App" width="360" height="576">
-            <div>
-              <h3>Pink App</h3>
-              <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <a href="#">9 900 руб.</a>
+          <li class="cards__item">
+            <img class="cards__img" src="img/img-pink.jpg" alt="Скриншот шаблона Pink App" width="360" height="576">
+            <div class="cards__content">
+              <h3 class="cards__header">Pink App</h3>
+              <p class="cards__text">Продуктовый лендинг приложения для iOS и Android</p>
+              <a class="cards__link" href="#">9 900 руб.</a>
             </div>
           </li>
-          <li>
-            <img src="img/img-barbershop.jpg" alt="Скриншот шаблона Barbershop" width="360" height="576">
-            <div>
-              <h3>Barbershop</h3>
-              <p>Сайт салона красоты. Для мужчин, да.</p>
-              <a href="#">9 900 руб.</a>
+          <li class="cards__item">
+            <img class="cards__img" src="img/img-barbershop.jpg" alt="Скриншот шаблона Barbershop" width="360" height="576">
+            <div class="cards__content">
+              <h3 class="cards__header">Barbershop</h3>
+              <p class="cards__text">Сайт салона красоты. Для мужчин, да.</p>
+              <a class="cards__link" href="#">9 900 руб.</a>
             </div>
           </li>
-          <li>
-            <img src="img/img-mishka.jpg" alt="Скриншот шаблона Mishka" width="360" height="576">
-            <div>
-              <h3>MISHKA</h3>
-              <p>Интернет-магазин вязаных игрушек</p>
-              <a href="#">9 900 руб.</a>
+          <li class="cards__item">
+            <img class="cards__img" src="img/img-mishka.jpg" alt="Скриншот шаблона Mishka" width="360" height="576">
+            <div class="cards__content">
+              <h3 class="cards__header">MISHKA</h3>
+              <p class="cards__text">Интернет-магазин вязаных игрушек</p>
+              <a class="cards__link" href="#">9 900 руб.</a>
             </div>
           </li>
-          <li>
-            <img src="img/img-aplus.jpg" alt="Скриншот шаблона A Plus" width="360" height="576">
-            <div>
-              <h3>A Plus</h3>
-              <p>Лендинг курсов повышения квалификации</p>
-              <a href="#">9 900 руб.</a>
+          <li class="cards__item">
+            <img class="cards__img" src="img/img-aplus.jpg" alt="Скриншот шаблона A Plus" width="360" height="576">
+            <div class="cards__content">
+              <h3 class="cards__header">A Plus</h3>
+              <p class="cards__text">Лендинг курсов повышения квалификации</p>
+              <a class="cards__link" href="#">9 900 руб.</a>
             </div>
           </li>
-          <li>
-            <img src="img/img-kvast.jpg" alt="Скриншот шаблона Кваст" width="360" height="576">
-            <div>
-              <h3>Кваст</h3>
-              <p>Промо-сайт производителя крафтового кваса</p>
-              <a href="#">9 900 руб.</a>
+          <li class="cards__item">
+            <img class="cards__img" src="img/img-kvast.jpg" alt="Скриншот шаблона Кваст" width="360" height="576">
+            <div class="cards__content">
+              <h3 class="cards__header">Кваст</h3>
+              <p class="cards__text">Промо-сайт производителя крафтового кваса</p>
+              <a class="cards__link" href="#">9 900 руб.</a>
             </div>
           </li>
         </ul>
 
-        <ul>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">Следующая</a></li>
+        <ul class="sorted-pages">
+          <li class="sorted-pages__item sorted-pages__item--current"><a class="sorted-pages__link" href="#">1</a></li>
+          <li class="sorted-pages__item"><a class="sorted-pages__link" href="#">2</a></li>
+          <li class="sorted-pages__item"><a class="sorted-pages__link" href="#">3</a></li>
+          <li class="sorted-pages__item"><a class="sorted-pages__link" href="#">Следующая</a></li>
         </ul>
       </section>
     </main>
 
-    <footer>
-      <section>
+    <footer class="footer">
+      <section class="footer__contacts contacts">
         <h2 class="visually-hidden">Контакты студии Нёрдс</h2>
-        <img src="/img/map.png" alt="Карта - Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
-        <div>
-          <h3>Nёrds Design Studio</h3>
-          <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-          <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-          <a href="contact.html">Напишите нам</a>
+        <img class="contacts__map" src="/img/map.png" alt="Карта - Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
+
+        <div class="contacts__card">
+          <h3 class="contacts__subheader">Nёrds Design Studio</h3>
+          <address class="contacts__adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          <a class="contacts__tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <a class="contacts__link" href="contact.html">Напишите нам</a>
         </div>
       </section>
 
-      <section>
-        <ul>
-          <li><a href="#">Вконтакте</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Инстаграмм</a></li>
+      <section class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link" href="#">Вконтакте</a></li>
+          <li class="social__item"><a class="social__link" href="#">Фейсбук</a></li>
+          <li class="social__item"><a class="social__link" href="#">Инстаграмм</a></li>
         </ul>
 
-        <div>
-          <h3>Давайте дружить, это выгодно!</h3>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="social__promo">
+          <h3 class="social__subheader">Давайте дружить, это выгодно!</h3>
+          <p class="social__text">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </section>
     </footer>
 
-    <form action="https://echo.htmlacademy.ru/" method="GET">
-      <fieldset>
-        <legend>Напишите нам</legend>
-        <button>Закрыть</button>
+    <form class="form-contacts" action="https://echo.htmlacademy.ru/" method="GET">
+      <fieldset class="form-contacts__set">
+        <legend class="form-contacts__legend">Напишите нам</legend>
+        <button class="form-contacts__close">Закрыть</button>
 
-        <label for="">Ваше имя:</label>
-        <input type="text">
+        <label class="form-contacts__label" for="">Ваше имя:</label>
+        <input class="form-contacts__input" type="text">
 
-        <label for="">Ваш e-mail:</label>
-        <input type="email">
+        <label class="form-contacts__label" for="">Ваш e-mail:</label>
+        <input class="form-contacts__input" type="email">
 
-        <label for="">Текст письма:</label>
-        <input type="text">
+        <label class="form-contacts__label" for="">Текст письма:</label>
+        <input class="form-contacts__input" type="text">
 
-        <button type="submit">Отправить</button>
+        <button class="form-contacts__submit" type="submit">Отправить</button>
       </fieldset>
     </form>
   </body>
