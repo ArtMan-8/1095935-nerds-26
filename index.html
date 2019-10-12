@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://rawcdn.githack.com/ArtMan-8/outline-prototype/7d7765cd572bdec952ca61280d70dd9f1781c153/css/outline-prototype-safe.css">
+    <!-- <link rel="stylesheet" href="https://rawcdn.githack.com/ArtMan-8/outline-prototype/7d7765cd572bdec952ca61280d70dd9f1781c153/css/outline-prototype-safe.css"> -->
     <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
@@ -28,29 +28,29 @@
       <section class="header__slider slider-header">
         <h2 class="visually-hidden">Преимущества студии Нёрдс</h2>
 
+        <input class="visually-hidden slider-header__radio slider-header__radio--one" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden slider-header__radio slider-header__radio--two" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden slider-header__radio slider-header__radio--three" type="radio" id="product-3" name="toggle">
         <div class="slider-header__controls">
-          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-          <input class="visually-hidden" type="radio" id="product-3" name="toggle">
-          <label class="slider-header__toggle slider-header__toggle--1" for="product-1">Первый</label>
-          <label class="slider-header__toggle slider-header__toggle--2" for="product-2">Второй</label>
-          <label class="slider-header__toggle slider-header__toggle--3" for="product-3">Третий</label>
+          <label class="slider-header__toggle slider-header__toggle--one" for="product-1">Первый</label>
+          <label class="slider-header__toggle slider-header__toggle--two" for="product-2">Второй</label>
+          <label class="slider-header__toggle slider-header__toggle--three" for="product-3">Третий</label>
         </div>
 
         <ul class="slider-header__list">
-          <li class="slider-header__item">
+          <li class="slider-header__item slider-header__item--one">
             <h3 class="slider-header__subheader">Долго, дорого,<br> скрупулезно.</h3>
-            <p class="slider-header__text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <p class="slider-header__text">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
             <a class="slider-header__link" href="#">Узнать больше</a>
           </li>
-          <li class="slider-header__item">
+          <li class="slider-header__item slider-header__item--two">
             <h3 class="slider-header__subheader">Любим математику как никто другой</h3>
-            <p class="slider-header__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <p class="slider-header__text">Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
             <a class="slider-header__link" href="#">Узнать больше</a>
           </li>
-          <li class="slider-header__item">
+          <li class="slider-header__item slider-header__item--three">
             <h3 class="slider-header__subheader">Только ночь,<br> только хардкор</h3>
-            <p class="slider-header__text">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+            <p class="slider-header__text">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
             <a class="slider-header__link" href="#">Узнать больше</a>
           </li>
         </ul>

@@ -3,3 +3,17 @@
   font-weight: $text-weight
   line-height: $text-height
   color: $text-color
+
+@mixin btn
+  cursor: pointer
+  border: none
+
+@mixin links-nav ($state, $hover, $active)
+  text-decoration: none
+  color: $state
+
+  &:hover
+    color: $hover
+
+  &:active
+    color: $active

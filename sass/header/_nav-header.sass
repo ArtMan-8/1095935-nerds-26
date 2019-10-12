@@ -1,0 +1,50 @@
+.nav-header
+  padding: 49px 20px 0 20px
+  display: flex
+  justify-content: space-between
+  text-transform: uppercase
+
+.nav-header__list
+  flex-grow: 1
+  display: flex
+  flex-wrap: wrap
+  list-style: none
+  align-self: center
+  justify-content: flex-start
+  margin: 0
+  margin-left: 140px
+  margin-right: 100px
+
+.nav-header__item
+  margin-top: 10px
+  margin-left: 23px
+  margin-right: 23px
+
+.nav-header__link
+  text-decoration: none
+  @include text(16px, 500, 30px, #000000)
+  @include links-nav(#000000, #fb565a, rgba(0, 0, 0, 0.3))
+
+  &--current
+    padding-bottom: 10px
+    border-bottom: 2px solid #fb565a
+
+.nav-header__basket
+  position: relative
+  align-self: center
+  padding-top: 10px
+  text-decoration: none
+  @include text(16px, 500, 30px, #000000)
+  @include links-nav(#000000, #fb565a, rgba(0, 0, 0, 0.3))
+
+  &::before
+    position: absolute
+    display: block
+    content: ""
+    width: 15px
+    height: 15px
+    left: -40px
+    top: 17px
+    background-image: url(../img/svg/basket-icon.svg)
+    background-repeat: no-repeat
+    background-position: center
