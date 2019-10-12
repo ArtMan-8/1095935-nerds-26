@@ -10,3 +10,7 @@
 node_modules/
 npm-debug.*
 Thumbs.db
+
+.htmlhintrc
+.stylelintrc.js
+csscomb.json
