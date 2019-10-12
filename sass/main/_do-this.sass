@@ -1,0 +1,84 @@
+.do-this
+  padding: 80px 20px
+  border-bottom: 2px solid #efefef
+
+.do-this__list
+  display: flex
+  flex-wrap: wrap
+  list-style: none
+  padding: 0
+  margin: 0
+
+.do-this__item
+  width: 300px
+
+  &:nth-child(3n+2)
+    margin: 0 100px
+
+  &--web
+    background: url("../img/advantage-picture-red.png"), linear-gradient(to bottom, #fb565a 146px, #ffffff 146px 100%)
+    background-size: auto 146px
+    background-repeat: no-repeat
+
+  &--app
+    background: url("../img/advantage-picture-green.png"), linear-gradient(to bottom, #00ca74 146px, #ffffff 146px 100%)
+    background-size: auto 146px
+    background-repeat: no-repeat
+
+  &--present
+    background: url("../img/advantage-picture-yellow.png"), linear-gradient(to bottom, #efc84a 146px, #ffffff 146px 100%)
+    background-size: auto 146px
+    background-repeat: no-repeat
+
+.do-this__subheader
+  margin: 171px 0 17px
+  @include text(24px, 700, 30px, #000000)
+  text-transform: uppercase
+
+.do-this__text
+  margin: 0
+  margin-bottom: 31px
+  @include text(16px, 400, 24px, #283136)
+
+.do-this__link
+  display: inline-block
+  padding: 16px 40px
+  @include text(16px, 500, 18px, #ffffff)
+  text-transform: uppercase
+  text-align: center
+  text-decoration: none
+  border-radius: 3px
+  border: none
+
+  &--web
+    background-color: #fb565a
+
+    &:hover
+      background-color: #e74246
+
+    &:active
+      color: rgba(255, 255, 255, 0.3)
+      background-color: #d7373b
+      box-shadow: insdet 0 3px 0 0 rgba(0, 1, 1, 0.1)
+
+  &--app
+    background-color: #00ca74
+
+    &:hover
+      background-color: #00bc6c
+
+    &:active
+      color: rgba(255, 255, 255, 0.3)
+      background-color: #00aa62
+      box-shadow: insdet 0 3px 0 0 rgba(0, 1, 1, 0.1)
+
+  &--present
+    background-color: #efc84a
+
+    &:hover
+      background-color: #eab534
+
+    &:active
+      color: rgba(255, 255, 255, 0.3)
+      background-color: #e5a722
+      box-shadow: insdet 0 3px 0 0 rgba(0, 1, 1, 0.1)

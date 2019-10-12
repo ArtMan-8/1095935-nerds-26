@@ -25,6 +25,10 @@
   @include text(16px, 500, 30px, #000000)
   @include links-nav(#000000, #fb565a, rgba(0, 0, 0, 0.3))
 
+  &:active
+    padding-bottom: 10px
+    border-bottom: 2px solid #fb565a
+
   &--current
     padding-bottom: 10px
     border-bottom: 2px solid #fb565a
@@ -33,9 +37,16 @@
   position: relative
   align-self: center
   padding-top: 10px
-  text-decoration: none
   @include text(16px, 500, 30px, #000000)
   @include links-nav(#000000, #fb565a, rgba(0, 0, 0, 0.3))
+
+  &:active
+    padding-bottom: 10px
+    border-bottom: 2px solid #fb565a
+
+  &--current
+    padding-bottom: 10px
+    border-bottom: 2px solid #fb565a
 
   &::before
     position: absolute
