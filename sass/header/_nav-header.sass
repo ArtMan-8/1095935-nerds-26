@@ -25,10 +25,6 @@
   @include text(16px, 500, 30px, #000000)
   @include links-nav(#000000, #fb565a, rgba(0, 0, 0, 0.3))
 
-  &:active
-    padding-bottom: 10px
-    border-bottom: 2px solid #fb565a
-
   &--current
     padding-bottom: 10px
     border-bottom: 2px solid #fb565a
@@ -36,17 +32,9 @@
 .nav-header__basket
   position: relative
   align-self: center
-  padding-top: 10px
+  margin-top: 10px
   @include text(16px, 500, 30px, #000000)
   @include links-nav(#000000, #fb565a, rgba(0, 0, 0, 0.3))
-
-  &:active
-    padding-bottom: 10px
-    border-bottom: 2px solid #fb565a
-
-  &--current
-    padding-bottom: 10px
-    border-bottom: 2px solid #fb565a
 
   &::before
     position: absolute
@@ -55,7 +43,10 @@
     width: 15px
     height: 15px
     left: -40px
-    top: 17px
+    top: 7px
     background-image: url(../img/svg/basket-icon.svg)
     background-repeat: no-repeat
     background-position: center
+
+  &--current
+    box-shadow: 0 5px 0 #eeeeee, 0 7px 0 #fb565a
