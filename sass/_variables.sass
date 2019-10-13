@@ -4,10 +4,6 @@
   line-height: $text-height
   color: $text-color
 
-@mixin btn
-  cursor: pointer
-  border: none
-
 @mixin links-nav ($state, $hover, $active)
   text-decoration: none
   color: $state
@@ -17,3 +13,46 @@
 
   &:active
     color: $active
+
+@mixin btn($padding)
+  display: inline-block
+  cursor: pointer
+  padding: $padding
+  text-transform: uppercase
+  text-align: center
+  text-decoration: none
+  border-radius: 3px
+  border: none
+
+@mixin btn--red
+  background-color: #fb565a
+
+  &:hover
+    background-color: #e74246
+
+  &:active
+    background-color: #d7373b
+    color: rgba(255, 255, 255, 0.3)
+    box-shadow: insdet 0 3px 0 0 rgba(0, 1, 1, 0.1)
+
+@mixin btn--green
+  background-color: #00ca74
+
+  &:hover
+    background-color: #00bc6c
+
+  &:active
+    color: rgba(255, 255, 255, 0.3)
+    background-color: #00aa62
+    box-shadow: insdet 0 3px 0 0 rgba(0, 1, 1, 0.1)
+
+@mixin btn--yellow
+  background-color: #efc84a
+
+  &:hover
+    background-color: #eab534
+
+  &:active
+    color: rgba(255, 255, 255, 0.3)
+    background-color: #e5a722
+    box-shadow: insdet 0 3px 0 0 rgba(0, 1, 1, 0.1)

@@ -97,21 +97,7 @@
   @include text(16px, 400, 24px, #283136)
 
 .slider-header__link
-  display: inline-block
-  padding: 17px 55px 15px
   @include text(16px, 500, 18px, #ffffff)
-  text-transform: uppercase
-  text-align: center
-  text-decoration: none
-  background-color: #fb565a
-  border-radius: 3px
-  border: none
-
-  &:hover
-    background-color: #e74246
-
-  &:active
-    background-color: #d7373b
-    color: rgba(255, 255, 255, 0.3)
-    box-shadow: insdet 0 3px 0 0 rgba(0, 1, 1, 0.1)
+  @include btn(16px 55px)
+  @include btn--red
 

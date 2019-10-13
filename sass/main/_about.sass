@@ -1,0 +1,66 @@
+.about
+  padding: 40px 20px 0 20px
+
+.about__container
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  padding-bottom: 49px
+  border-bottom: 2px solid #efefef
+
+.about__left
+  width: 650px
+
+.about__header
+  margin: 34px 0 34px
+  @include text(45px, 500, 45px, #000000)
+
+.about__text
+  margin: 0 0 38px
+  @include text(16px, 400, 24px, #283136)
+
+.about__subheader
+  margin: 0 0 24px
+  text-transform: uppercase
+  @include text(16px, 700, 24px, #000000)
+
+.about__list
+  list-style: none
+  margin: 0
+  padding: 0 0 0 36px
+
+.about__item
+  position: relative
+  @include text(16px, 400, 24px, #283136)
+  margin-bottom: 24px
+
+  &::before
+    position: absolute
+    display: block
+    content: ""
+    width: 25px
+    height: 2px
+    background-color: #fb565a
+    left: -35px
+    top: 11px
+
+.about__right
+  width: 360px
+
+.about__logo
+  margin-bottom: 30px
+
+.about__table
+  margin: 0 auto
+
+.table-about__header
+  text-transform: uppercase
+  @include text(16px, 700, 24px, #000000)
+
+.table-about__column--percent
+  padding-top: 55px
+  @include text(45px, 700, 10px, #000000)
+
+.table-about__column--text
+  padding-top: 35px
+  @include text(16px, 400, 18px, #283136)

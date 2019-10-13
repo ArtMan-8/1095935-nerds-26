@@ -1,6 +1,5 @@
 .do-this
-  padding: 80px 20px
-  border-bottom: 2px solid #efefef
+  padding: 80px 20px 0 20px
 
 .do-this__list
   display: flex
@@ -8,6 +7,8 @@
   list-style: none
   padding: 0
   margin: 0
+  padding-bottom: 80px
+  border-bottom: 2px solid #efefef
 
 .do-this__item
   width: 300px
@@ -41,44 +42,14 @@
   @include text(16px, 400, 24px, #283136)
 
 .do-this__link
-  display: inline-block
-  padding: 16px 40px
   @include text(16px, 500, 18px, #ffffff)
-  text-transform: uppercase
-  text-align: center
-  text-decoration: none
-  border-radius: 3px
-  border: none
+  @include btn(16px 40px)
 
   &--web
-    background-color: #fb565a
-
-    &:hover
-      background-color: #e74246
-
-    &:active
-      color: rgba(255, 255, 255, 0.3)
-      background-color: #d7373b
-      box-shadow: insdet 0 3px 0 0 rgba(0, 1, 1, 0.1)
+    @include btn--red
 
   &--app
-    background-color: #00ca74
-
-    &:hover
-      background-color: #00bc6c
-
-    &:active
-      color: rgba(255, 255, 255, 0.3)
-      background-color: #00aa62
-      box-shadow: insdet 0 3px 0 0 rgba(0, 1, 1, 0.1)
+    @include btn--green
 
   &--present
-    background-color: #efc84a
-
-    &:hover
-      background-color: #eab534
-
-    &:active
-      color: rgba(255, 255, 255, 0.3)
-      background-color: #e5a722
-      box-shadow: insdet 0 3px 0 0 rgba(0, 1, 1, 0.1)
+    @include btn--yellow
