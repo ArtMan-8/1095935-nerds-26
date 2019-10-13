@@ -1,0 +1,52 @@
+.contacts
+  position: relative
+  box-sizing: content-box
+  padding: 80px 20px 0
+  height: 416px
+
+.contacts__map
+  position: absolute
+  width: 1440px
+  height: 416px
+  left: 50%
+  transform: translateX(-50%)
+  background-color: #eeeeee
+  background-image: url("../img/map.png")
+
+.contacts__marker
+  position: relative
+  width: 231px
+  height: 190px
+  left: 820px
+  top: 89px
+  background-image: url("../img/map-marker.png")
+
+.contacts__card
+  box-sizing: border-box
+  position: relative
+  width: 320px
+  padding: 50px
+  margin-top: 54px
+  margin-left: 20px
+  background-color: #ffffff
+
+.contacts__subheader
+  margin: 0
+  margin-bottom: 23px
+  text-transform: uppercase
+  @include text(18px, 700, 30px, #000000)
+
+.contacts__adress
+  margin-bottom: 15px
+  font-style: normal
+  @include text(16px, 400, 18px, #666666)
+
+.contacts__tel
+  text-decoration: none
+  @include text(16px, 400, 18px, #666666)
+
+.contacts__link
+  @include text(16px, 500, 18px, #ffffff)
+  @include btn(16px 45px)
+  @include btn--red
+  margin-top: 33px
