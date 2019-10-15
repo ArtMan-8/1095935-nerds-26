@@ -22,6 +22,8 @@
   src: url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
 }
 
+/* variables */
+/* mixins */
 /* common style */
 html {
   box-sizing: border-box;
@@ -55,13 +57,9 @@ body {
 }
 
 .header {
-  background-color: #eeeeee;
-}
-
-.header__nav,
-.header__slider {
   width: 1200px;
   margin: 0 auto;
+  background-color: #eeeeee;
 }
 
 .header__header {
@@ -303,14 +301,15 @@ body {
 }
 
 .main {
+  width: 1200px;
+  margin: 0 auto;
   background-color: #ffffff;
 }
 
-.main__do-this,
-.main__about,
-.main__partners {
-  width: 1200px;
-  margin: 0 auto;
+.container__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .do-this {
@@ -429,14 +428,7 @@ body {
 }
 
 .about {
-  padding: 40px 20px 0 20px;
-}
-
-.about__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-bottom: 49px;
+  padding: 40px 20px 49px 20px;
   border-bottom: 2px solid #efefef;
 }
 
@@ -579,20 +571,15 @@ body {
 }
 
 .footer {
-  background-color: #ffffff;
-}
-
-.footer__contacts,
-.footer__social {
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .contacts {
   position: relative;
-  box-sizing: content-box;
   padding: 80px 20px 0;
-  height: 416px;
+  height: 496px;
 }
 
 .contacts__map {
@@ -615,12 +602,10 @@ body {
 }
 
 .contacts__card {
-  box-sizing: border-box;
   position: relative;
   width: 320px;
   padding: 50px;
   margin-top: 54px;
-  margin-left: 20px;
   background-color: #ffffff;
 }
 
@@ -679,6 +664,66 @@ body {
 }
 
 .social {
-  padding: 0 20px;
+  padding: 69px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.social__item {
+  font-size: 0;
+  margin-right: 12px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+}
+
+.social__item:hover {
+  background-color: #e74246;
+}
+
+.social__item:active {
+  fill-opacity: 0.3;
+  background-color: #d7373b;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.social__link {
+  display: flex;
+  width: 79px;
+  height: 79px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__promo {
+  margin-left: 126px;
+}
+
+.social__subheader {
+  padding-top: 6px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #000000;
+}
+
+.social__text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #444444;
+}
+
+.form-contacts {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
