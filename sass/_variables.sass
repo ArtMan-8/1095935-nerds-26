@@ -1,10 +1,15 @@
-@mixin text ($text-size, $text-weight, $text-height, $text-color)
+/* variables */
+$color-text-header: #000000
+$color-text-main: #283136
+
+/* mixins */
+@mixin text($text-size, $text-weight, $text-height, $text-color)
   font-size: $text-size
   font-weight: $text-weight
   line-height: $text-height
   color: $text-color
 
-@mixin links-nav ($state, $hover, $active)
+@mixin links-nav($state, $hover, $active)
   text-decoration: none
   color: $state
 
