@@ -39,7 +39,7 @@
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
-                    <div class="bar" style="margin-left: 0%; width: 70%"></div>
+                    <div class="bar"></div>
                   </div>
                   <div class="toggle toggle-min"></div>
                   <div class="toggle toggle-max"></div>
@@ -55,16 +55,16 @@
               <legend class="form-filter__legend">Сетка:</legend>
               <ul class="form-filter__list">
                 <li class="form-filter__item">
-                  <input class="form-filter__input form-filter__input--radio" type="radio" checked>
-                  <label class="form-filter__label" for="">Адаптивная</label>
+                  <input id="adaptive" name="grid" class="visually-hidden form-filter__input form-filter__input--radio" type="radio" checked>
+                  <label class="form-filter__label" for="adaptive">Адаптивная</label>
                 </li>
                 <li class="form-filter__item">
-                  <input class="form-filter__input form-filter__input--radio" type="radio">
-                  <label class="form-filter__label" for="">Фиксированная</label>
+                  <input id="fixed" name="grid" class="visually-hidden form-filter__input form-filter__input--radio" type="radio">
+                  <label class="form-filter__label" for="fixed">Фиксированная</label>
                 </li>
                 <li class="form-filter__item">
-                  <input class="form-filter__input form-filter__input--radio" type="radio">
-                  <label class="form-filter__label" for="">Резиновая</label>
+                  <input id="elastic" name="grid" class="visually-hidden form-filter__input form-filter__input--radio" type="radio">
+                  <label class="form-filter__label" for="elastic">Резиновая</label>
                 </li>
               </ul>
             </fieldset>
@@ -73,24 +73,24 @@
               <legend class="form-filter__legend">Особенности:</legend>
               <ul class="form-filter__list">
                 <li class="form-filter__item">
-                  <input class="form-filter__input form-filter__input--check" type="checkbox" checked>
-                  <label class="form-filter__label" for="">Слайдер</label>
+                  <input id="slider" name="features" class="visually-hidden form-filter__input form-filter__input--check" type="checkbox" checked>
+                  <label class="form-filter__label" for="slider">Слайдер</label>
                 </li>
                 <li class="form-filter__item">
-                  <input class="form-filter__input form-filter__input--check" type="checkbox">
-                  <label class="form-filter__label" for="">Блок преимуществ</label>
+                  <input id="advance" name="features" class="visually-hidden form-filter__input form-filter__input--check" type="checkbox">
+                  <label class="form-filter__label" for="advance">Блок преимуществ</label>
                 </li>
                 <li class="form-filter__item">
-                  <input class="form-filter__input form-filter__input--check" type="checkbox" checked>
-                  <label class="form-filter__label" for="">Новости</label>
+                  <input id="news" name="features" class="visually-hidden form-filter__input form-filter__input--check" type="checkbox" checked>
+                  <label class="form-filter__label" for="news">Новости</label>
                 </li>
                 <li class="form-filter__item">
-                  <input class="form-filter__input form-filter__input--check" type="checkbox">
-                  <label class="form-filter__label" for="">Галерея</label>
+                  <input id="gallery" name="features" class="visually-hidden form-filter__input form-filter__input--check" type="checkbox">
+                  <label class="form-filter__label" for="gallery">Галерея</label>
                 </li>
                 <li class="form-filter__item">
-                  <input class="form-filter__input form-filter__input--check" type="checkbox">
-                  <label class="form-filter__label" for="">Корзина</label>
+                  <input id="cart" name="features" class="visually-hidden form-filter__input form-filter__input--check" type="checkbox">
+                  <label class="form-filter__label" for="cart">Корзина</label>
                 </li>
               </ul>
             </fieldset>
