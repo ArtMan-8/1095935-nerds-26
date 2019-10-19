@@ -180,6 +180,7 @@ body {
   box-sizing: content-box;
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 18px;
   height: 18px;
   padding: 8px;
@@ -282,6 +283,7 @@ body {
   line-height: 18px;
   color: #ffffff;
   display: inline-block;
+  vertical-align: middle;
   cursor: pointer;
   padding: 16px 55px;
   text-transform: uppercase;
@@ -337,19 +339,19 @@ body {
 }
 
 .do-this__item--web {
-  background: url("../img/advantage-picture-red.png"), linear-gradient(to bottom, #fb565a 146px, #ffffff 146px 100%);
+  background: url("../img/advantage-picture-red.png");
   background-size: auto 146px;
   background-repeat: no-repeat;
 }
 
 .do-this__item--app {
-  background: url("../img/advantage-picture-green.png"), linear-gradient(to bottom, #00ca74 146px, #ffffff 146px 100%);
+  background: url("../img/advantage-picture-green.png");
   background-size: auto 146px;
   background-repeat: no-repeat;
 }
 
 .do-this__item--present {
-  background: url("../img/advantage-picture-yellow.png"), linear-gradient(to bottom, #efc84a 146px, #ffffff 146px 100%);
+  background: url("../img/advantage-picture-yellow.png");
   background-size: auto 146px;
   background-repeat: no-repeat;
 }
@@ -378,6 +380,7 @@ body {
   line-height: 18px;
   color: #ffffff;
   display: inline-block;
+  vertical-align: middle;
   cursor: pointer;
   padding: 16px 40px;
   text-transform: uppercase;
@@ -632,6 +635,7 @@ body {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
   width: 50%;
   text-transform: uppercase;
   font-size: 16px;
@@ -793,6 +797,7 @@ body {
   line-height: 18px;
   color: #000000;
   display: inline-block;
+  vertical-align: middle;
   cursor: pointer;
   padding: 17px 89px;
   text-transform: uppercase;
@@ -815,6 +820,10 @@ body {
 
 .main__sorted {
   padding: 55px 20px 30px;
+}
+
+.sorted {
+  width: 800px;
 }
 
 .sorted__choise {
@@ -999,6 +1008,7 @@ body {
   line-height: 18px;
   color: #ffffff;
   display: inline-block;
+  vertical-align: middle;
   cursor: pointer;
   padding: 16px 60px;
   text-transform: uppercase;
@@ -1043,6 +1053,7 @@ body {
   line-height: 18px;
   color: #000000;
   display: inline-block;
+  vertical-align: middle;
   cursor: pointer;
   padding: 16px 21px;
   text-transform: uppercase;
@@ -1065,6 +1076,7 @@ body {
 
 .sorted-pages__btn--text {
   display: inline-block;
+  vertical-align: middle;
   cursor: pointer;
   padding: 16px 78px;
   text-transform: uppercase;
@@ -1100,33 +1112,41 @@ body {
 }
 
 .footer {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.contacts {
+  position: relative;
+  padding: 0 20px;
+}
+
+.contacts__maps {
+  position: relative;
+  width: 100vw;
+  height: 416px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #eeeeee;
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-position: center top;
 }
 
-.contacts {
-  width: 1200px;
-  height: 416px;
-  margin: 0 auto;
-  padding: 0 20px;
-  position: relative;
-}
-
 .contacts__marker {
-  position: relative;
+  position: absolute;
   width: 231px;
   height: 190px;
-  left: 680px;
+  left: 700px;
   top: 89px;
   background-image: url("../img/map-marker.png");
 }
 
 .contacts__card {
-  position: relative;
+  position: absolute;
   width: 320px;
   padding: 50px;
-  top: -136px;
+  top: 54px;
   background-color: #ffffff;
 }
 
@@ -1163,6 +1183,7 @@ body {
   line-height: 18px;
   color: #ffffff;
   display: inline-block;
+  vertical-align: middle;
   cursor: pointer;
   padding: 16px 45px;
   text-transform: uppercase;
@@ -1185,8 +1206,6 @@ body {
 }
 
 .social {
-  width: 1200px;
-  margin: 0 auto;
   padding: 69px 20px;
   display: flex;
   flex-wrap: wrap;
@@ -1200,7 +1219,13 @@ body {
 }
 
 .social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 0;
+  line-height: 0;
+  width: 79px;
+  height: 79px;
   margin-right: 12px;
   border-radius: 50%;
   background-color: #e1e1e1;
@@ -1217,11 +1242,8 @@ body {
 }
 
 .social__link {
-  display: flex;
-  width: 79px;
-  height: 79px;
-  justify-content: center;
-  align-items: center;
+  padding: 30px;
+  background-color: transparent;
 }
 
 .social__promo {
@@ -1247,6 +1269,136 @@ body {
 }
 
 .form-contacts {
-  display: none;
+  position: fixed;
+  width: 960px;
+  height: 590px;
+  padding: 70px 100px 85px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+
+.form-contacts__set {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-contacts__legend {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+.form-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-contacts__row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 36px;
+}
+
+.form-contacts__row--name, .form-contacts__row--email {
+  width: 360px;
+}
+
+.form-contacts__row--message {
+  width: 100%;
+}
+
+.form-contacts__label {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.form-contacts__input {
+  opacity: 0.5;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.5);
+  border: solid 2px #d7dcde;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+
+.form-contacts__input--message {
+  height: 118px;
+}
+
+.form-contacts__input:hover {
+  border: solid 2px #b4b9bb;
+}
+
+.form-contacts__input:focus {
+  color: #444444;
+  border: solid 2px #000000;
+}
+
+.form-contacts__input:invalid {
+  border: solid 2px #e74246;
+}
+
+.form-contacts__close {
+  position: absolute;
+  cursor: pointer;
+  top: 78px;
+  right: 90px;
+  font-size: 0;
+  border: none;
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/svg/close-cross.svg");
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+
+.form-contacts__close:hover {
+  opacity: 1;
+}
+
+.form-contacts__close:active {
+  opacity: 0.1;
+}
+
+.form-contacts__submit {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 17px 83px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  border: none;
+  background-color: #fb565a;
+}
+
+.form-contacts__submit:hover {
+  background-color: #e74246;
+}
+
+.form-contacts__submit:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: insdet 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 /*# sourceMappingURL=main.css.map */
