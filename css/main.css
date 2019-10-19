@@ -326,12 +326,13 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
   border-bottom: 2px solid #efefef;
 }
 
 .do-this__item {
   width: 300px;
+  margin-bottom: 60px;
 }
 
 .do-this__item:nth-child(3n+2) {
@@ -995,6 +996,8 @@ body {
 
 .cards__text {
   margin: 0 0 30px;
+  max-height: 300px;
+  overflow: hidden;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -1121,25 +1124,36 @@ body {
   padding: 0 20px;
 }
 
-.contacts__maps {
+.contacts__map {
   position: relative;
-  width: 100vw;
+  width: 99vw;
   height: 416px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #eeeeee;
+  overflow: hidden;
+}
+
+.contacts__maps {
+  position: relative;
+  width: 1440px;
+  height: 416px;
+  left: 50%;
+  transform: translateX(-50%);
   background-image: url("../img/map.png");
+  background-size: 1440px 416px;
   background-repeat: no-repeat;
-  background-position: center top;
 }
 
 .contacts__marker {
   position: absolute;
   width: 231px;
   height: 190px;
-  left: 700px;
+  right: 389px;
   top: 89px;
   background-image: url("../img/map-marker.png");
+  background-size: 231px 190px;
+  background-repeat: no-repeat;
 }
 
 .contacts__card {
@@ -1214,6 +1228,7 @@ body {
 .social__list {
   display: flex;
   flex-wrap: wrap;
+  width: 380px;
   padding: 0;
   margin: 0;
 }
@@ -1247,7 +1262,8 @@ body {
 }
 
 .social__promo {
-  margin-left: 126px;
+  max-width: 760px;
+  margin-left: 20px;
 }
 
 .social__subheader {
@@ -1269,6 +1285,7 @@ body {
 }
 
 .form-contacts {
+  display: none;
   position: fixed;
   width: 960px;
   height: 590px;
