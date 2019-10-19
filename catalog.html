@@ -181,8 +181,10 @@
         <h2 class="visually-hidden">Контакты студии Нёрдс</h2>
 
         <div class="contacts__map">
-          <div class="contacts__maps"></div>
-          <div class="contacts__marker"></div>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A75adac0e95cb439d0538e7d1a591ac4379283b3799f1014991879ca3a740b9cb&amp;source=constructor"></iframe>
+          <div class="contacts__maps">
+              <div class="contacts__marker"></div>
+          </div>
         </div>
 
         <div class="contacts__card">
@@ -226,17 +228,17 @@
         <div class="form-flex">
           <div class="form-contacts__row form-contacts__row--name">
             <label class="form-contacts__label" for="form-name">Ваше имя:</label>
-            <input id="form-name" class="form-contacts__input" type="text" name="name" placeholder="Имя Фамилия">
+            <input id="form-name" class="form-contacts__input" type="text" name="name" placeholder="Имя Фамилия" required>
           </div>
 
           <div class="form-contacts__row form-contacts__row--email">
             <label class="form-contacts__label" for="form-email">Ваш e-mail:</label>
-            <input id="form-email" class="form-contacts__input" type="email" name="email" placeholder="email@example.com">
+            <input id="form-email" class="form-contacts__input" type="email" name="email" placeholder="email@example.com" required>
           </div>
 
           <div class="form-contacts__row form-contacts__row--message">
             <label class="form-contacts__label" for="form-message">Текст письма:</label>
-            <textarea id="form-message" class="form-contacts__input form-contacts__input--message" type="text" name="message" placeholder="В свободной форме"></textarea>
+            <textarea id="form-message" class="form-contacts__input form-contacts__input--message" name="message" placeholder="В свободной форме" required></textarea>
           </div>
         </div>
 
@@ -244,5 +246,7 @@
         <button class="form-contacts__submit" type="submit">Отправить</button>
       </fieldset>
     </form>
+
+    <script src="js/contact-us.js"></script>
   </body>
 </html>

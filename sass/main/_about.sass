@@ -51,10 +51,17 @@
   text-transform: uppercase
   @include text(16px, 700, 24px, $color-text-header)
 
-.table-about__column--percent
-  padding-top: 55px
-  @include text(45px, 700, 10px, #000000)
 
-.table-about__column--text
-  padding-top: 35px
-  @include text(16px, 400, 18px, $color-text-main)
+.table-about__column
+  width: 120px
+
+  & sup
+    font-size: 60%
+
+  &--percent
+    padding-top: 55px
+    @include text(45px, 700, 10px, #000000)
+
+  &--text
+    padding-top: 35px
+    @include text(16px, 400, 18px, $color-text-main)
