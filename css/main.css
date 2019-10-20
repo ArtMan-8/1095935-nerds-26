@@ -1,6 +1,6 @@
 /* roboto-regular*/
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
@@ -8,7 +8,7 @@
 
 /* roboto-medium */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   src: url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff");
@@ -16,7 +16,7 @@
 
 /* roboto-bold */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
@@ -157,7 +157,7 @@ body {
   height: 15px;
   left: -40px;
   top: 7px;
-  background-image: url(../img/svg/basket-icon.svg);
+  background-image: url("../img/svg/basket-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -353,19 +353,19 @@ body {
 }
 
 .do-this__item--web {
-  background: url("../img/advantage-picture-red.png");
+  background-image: url("../img/advantage-picture-red.png");
   background-size: auto 146px;
   background-repeat: no-repeat;
 }
 
 .do-this__item--app {
-  background: url("../img/advantage-picture-green.png");
+  background-image: url("../img/advantage-picture-green.png");
   background-size: auto 146px;
   background-repeat: no-repeat;
 }
 
 .do-this__item--present {
-  background: url("../img/advantage-picture-yellow.png");
+  background-image: url("../img/advantage-picture-yellow.png");
   background-size: auto 146px;
   background-repeat: no-repeat;
 }
@@ -1165,7 +1165,7 @@ body {
 
 .sorted-pages__btn--current {
   background-color: #ffffff;
-  box-shadow: inset 0 0 0 3px #eeeeee;
+  box-shadow: inset 3px 3px 0px #dbdbdb, inset -3px -3px 0px #dbdbdb;
 }
 
 .sorted-pages__btn--current:hover {
