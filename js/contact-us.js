@@ -28,24 +28,35 @@ contactShow.addEventListener('click', function(evt) {
   contactEmail.value = localStorage.getItem('contactEmail');
 });
 
-/* Загрузках данных из localStorage, если доступно */
+/* Загрузках данных из localStorage, если доступно
+анимация ошибки */
 formContacts.addEventListener('submit', function(evt) {
-  if (isStorageSupport) {
-    localStorage.setItem('contactName', contactName.value);
-    localStorage.setItem('contactEmail', contactEmail.value);
+  if (!contactName.value || !contactEmail.value || !contactMessage.value) {
+    evt.preventDefault();
+    formContacts.classList.remove('form-contacts--error');
+    formContacts.offsetWidth = formContacts.offsetWidth;
+    formContacts.classList.add('form-contacts--error');
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem('contactName', contactName.value);
+      localStorage.setItem('contactEmail', contactEmail.value);
+    }
   }
 });
 
-/* Закрытие формы кнопкой и клавишой ESC */
+/* Закрытие формы кнопкой */
 btnClose.addEventListener('click', function(evt) {
   evt.preventDefault();
+  formContacts.classList.remove('form-contacts--error');
   formContacts.classList.remove('form-contacts--show');
 });
 
+/* Закрытие формы клавишой ESC */
 window.addEventListener('keydown', function(evt) {
   if (evt.keyCode === 27) {
     if (formContacts.classList.contains('form-contacts--show')) {
       evt.preventDefault();
+      formContacts.classList.remove('form-contacts--error');
       formContacts.classList.remove('form-contacts--show');
     }
   }
