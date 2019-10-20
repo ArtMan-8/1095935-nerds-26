@@ -7,6 +7,8 @@
 *.psd
 *.sublime*
 
+sass/**/*
+css/*.map
 node_modules/
 npm-debug.*
 Thumbs.db
