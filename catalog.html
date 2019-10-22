@@ -31,7 +31,7 @@
       <div class="container__flex">
         <section class="main__filter">
           <h2 class="visually-hidden">Фильтр готовых шаблонов</h2>
-          <form class="form-filter" action="https://echo.htmlacademy.ru/" method="GET" aria-label="Выбор шаблонов по критериям" tabindex="0">
+          <form class="form-filter" action="https://echo.htmlacademy.ru/" method="GET">
             <fieldset class="form-filter__set">
               <legend class="form-filter__legend">Стоимость:</legend>
 
@@ -199,7 +199,7 @@
         <ul class="social__list">
           <li class="social__item"><a class="social__link social__link--vk" href="#">Вконтакте</a></li>
           <li class="social__item"><a class="social__link social__link--fb" href="#">Фейсбук</a></li>
-          <li class="social__item"><a class="social__link social__link--insta" href="#">Инстаграмм</a></li>
+          <li class="social__item"><a class="social__link social__link--instagram" href="#">Инстаграмм</a></li>
         </ul>
 
         <div class="social__promo">
@@ -216,17 +216,17 @@
         <div class="form-flex">
           <div class="form-contacts__row form-contacts__row--name">
             <label class="form-contacts__label" for="form-name">Ваше имя:</label>
-            <input id="form-name" class="form-contacts__input" type="text" name="name" placeholder="Имя Фамилия">
+            <input id="form-name" class="form-contacts__input" type="text" name="name" placeholder="Имя Фамилия" required>
           </div>
 
           <div class="form-contacts__row form-contacts__row--email">
             <label class="form-contacts__label" for="form-email">Ваш e-mail:</label>
-            <input id="form-email" class="form-contacts__input" type="email" name="email" placeholder="email@example.com">
+            <input id="form-email" class="form-contacts__input" type="email" name="email" placeholder="email@example.com" required>
           </div>
 
           <div class="form-contacts__row form-contacts__row--message">
             <label class="form-contacts__label" for="form-message">Текст письма:</label>
-            <textarea id="form-message" class="form-contacts__input form-contacts__input--message" name="message" placeholder="В свободной форме"></textarea>
+            <textarea id="form-message" class="form-contacts__input form-contacts__input--message" name="message" placeholder="В свободной форме" required></textarea>
           </div>
         </div>
 
